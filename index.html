@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./imagens/icons8-favicon.gif" type="image/gif">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- usar o boots romoto é mais eficiente doque baixar o boot na past lib -->
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-3" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title"><span class="fs-2 text-white">Lar dos</span><br><span class="text-colored">computadores</span></h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span> <!-- faz o menu hamburger -->
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-a-loja" class="nav-link fs-4">
+                            <i class="bi bi-shop text-white"></i>
+                            <span class="text-white">Sobre a loja</span>
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#conserto" class="nav-link fs-4">
+                            <i class="bi bi-wrench-adjustable text-white"></i>
+                            <span class="text-white">Conserte sua maquina</span>
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#nosso-pcs" class="nav-link fs-4">
+                            <i class="bi bi-motherboard text-white"></i>
+                            <span class="text-white">Monte seu Pc</span>
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link fs-4">
+                            <i class="bi bi-chat-left-text me-1 text-white"></i>
+                            <span class="text-white">Fale conosco</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-a-loja">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner"><!-- é o container do carousel -->
+                    <div class="carousel-item active" data-bs-interval="3000"><!-- o active é o ponto de partida, depois do primeor ser carregado o bootstrap automaticamente passa para o proximo -->
+                        <img src="./imagens/slides/carousel1chat.png" alt="Imagem de um computador completo">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./imagens/slides/imagemNova2.png" alt="Imagem de peças de um computador">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./imagens/slides/carousel3peri.jpg" alt="Imagem de periféricos de um computador">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./imagens/slides/imagemnova1.png" alt="Imagem de um homem consertando um computador">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+                </div>
+            </div>
+            <div>
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./imagens/imagem da loja.png" class="d-block w-100 rounded" alt="Imagem da faixada da loja" >
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title text-white">Sobre <span class="text-colored">a loja</span></h2>
+                            <p>
+                                🌟 Bem-vindo ao Lar do Computador! 🌟Somos a sua referência em computadores gamers 🎮💻, onde a paixão por tecnologia e performance se encontram. Na Lar do Computador, você encontra:
+                            </p>
+                            <h3 class="section-title text-white">Nosso <span class="text-colored">espaço</span></h3>
+                            <p>
+                                🏠 Ambiente Premium & Tecnológico
+                                    Na Lar dos Computadores, criamos um espaço imersivo onde gamers e entusiastas de tecnologia se sentem em casa:
+                                    🖥️ Área de Exposição:
+                                    PCs gamers montados e prontos para testar, com configurações de alto desempenho (RTX 40XX, processadores Intel/AMD top de linha).
+                                    Periféricos iluminados por RGB (teclados, mouses, headsets) em vitrines modernas.
+                                    🔧 Oficina Transparente:
+                                    Espaço aberto para você acompanhar seu conserto em tempo real.
+                                    Equipamentos de última geração para diagnósticos precisos.
+                                    🎧 Zona de Experiência:
+                                    Estação com setups completos para testar jogos antes de comprar.
+                                    Conforto garantido: cadeiras gamers, iluminação ambiente e som surround.
+                            </p>
+                            <ul>
+                                <li>🎨 Design & Conforto
+                                    Paleta de cores: Preto, roxo e azul neon (tema cyberpunk).
+                                    Decoração: Pôsteres de games, peças de hardware antigas como arte na parede e iluminação LED dinâmica.
+                                    Atendimento: Balcão estilo LAN house com atendentes especializados.
+                                </li>
+                                <li class="mb-3 mt-3">📌 Diferenciais do Nosso Espaço:
+                                    ✅ Organização impecável: Componentes novos e usados catalogados por categoria.
+                                    ✅ Transparência: Câmeras ao vivo na oficina para você acompanhar o serviço.
+                                    ✅ Eventos: Torneios mensais e lançamentos de produtos com direito a descontos exclusivos.
+                                </li>
+                                <li>👨‍💻 Equipe do Lar do Computador: Expertise e Paixão por Tecnologia! 👩‍💻
+                                    Na Lar do Computador, nossa equipe é o coração da loja – um time de especialistas apaixonados por hardware e jogos, prontos para oferecer:
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <section id="conserto" class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="section-title text-center mb-5 text-white">
+                            Nossa <span class="text-colored">oficina</span>
+                        </h2>
+                    <div class="col-12 col-md-4">
+                        <article class="card hover-floating-card h-100 d-flex flex-column">
+                            <header class="card-header"> 
+                                <h3><span class="text-cards">Nossa equipe</span></h3>
+                            </header>
+                            <img src="./imagens/cards.oficina/cardConseto1.jpg" alt="Trabalhadores na oficina">
+                            <div class="card-body">
+                                <p class="card-text">🛠️ Técnicos Certificados:
+                                    Profissionais com certificação em montagem e reparo de PCs gamers (Intel, NVIDIA, AMD).
+                                    Diagnósticos rápidos e transparentes – explicamos o problema e a solução sem "tecniquês".
+                                </p>
+                            </div>
+                            <footer class="card-footer">
+                                Data da foto <time>02/05/2025 às 18:46</time>
+                            </footer>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-4 m-md-0 mt-sm-3 mb-sm-3">
+                        <article class="card hover-floating-card h-100 d-flex flex-column">
+                            <header class="card-header"> 
+                                <h3><span class="text-cards">Equipamentos</span></h3>
+                            </header>
+                            <img src="./imagens/cards.oficina/cardOficinaFerramentas.jpg" alt="Ferramentas da oficina">
+                            <div class="card-body">
+                                <p class="card-text">🛠️ Ferramentas Básicas (Essenciais)
+                                    Kit de Ferramentas de Precisão
+                                    Chaves Phillips, torx e hexagonais.
+                                    Pinças antiestáticas e espátulas para montagem.
+                                    Estação de Solda ESD
+                                    Solda de estanho e pistola para reparos em placas (motherboard, GPU).
+                                    Multímetro Digital
+                                    Medição de tensão, corrente e resistência em componentes elétricos.
+                                </p>
+                            </div>
+                            <footer class="card-footer">
+                                Data da foto <time>28/04/2025 às 17:36</time>
+                            </footer>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <article class="card hover-floating-card h-100 d-flex flex-column">
+                            <header class="card-header"> 
+                                <h3><span class="text-cards">Consertos</span></h3>
+                            </header>
+                            <img src="./imagens/cards.oficina/cardPecas.png" alt="Trabalhadores na oficina">
+                            <div class="card-body">
+                                <p class="card-text">🛠️ Peças que Recuperamos
+                                    Componente	Problemas Resolvidos	Status Pós-Conserto
+                                    Placa de Vídeo	Artefatos gráficos, superaquecimento.	Testada em benchmarks 4K.
+                                    Fonte ATX	Curtos-circuitos, instabilidade elétrica.	Certificada em carga máxima.
+                                    HD/SSD	Bad blocks, corrupção de dados.	Setorização e formatação SSD.
+                                    Placa-Mãe	Capacitors estufados, slots danificados.	Solda revisada e BIOS atualizada.
+                                </p>
+                            </div>
+                            <footer class="card-footer">
+                                Data da foto <time>02/05/2025 às 18:46</time>
+                            </footer>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section id="nosso-pcs" class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="section-title text-center mb-5 text-white">
+                            Nossos <span class="text-colored1">computadores</span>
+                        </h2>
+                    <div class="col-12 col-md-4">
+                        <article class="card hover-floating-card h-100 d-flex flex-column">
+                            <header class="card-header card1"> 
+                                <h3><span class="text-cards1">🔥PC Gamer High-End com RTX4070 Ti🔥</span></h3>
+                            </header>
+                            <img src="./imagens/cards.pcs/pc1.jpg" alt="Trabalhadores na oficina">
+                            <div class="card-body">
+                                <p class="card-text">Configuração básica:
+                                    Processador: Intel Core i7-13700K (16 núcleos, até 5.4GHz)
+                                    Placa de vídeo: NVIDIA RTX 4070 Ti (12GB GDDR6X)
+                                    Memória RAM: 32GB DDR5 5600MHz
+                                    Armazenamento: SSD NVMe 1TB + HDD 2TB
+                                    Placa-mãe: ASUS ROG Strix B760-F (WiFi 6, DDR5)
+                                    Fonte: Corsair RM850x (850W, 80+ Gold)
+                                    Cooler: DeepCool AK620 (Air Cooler Dual Tower)
+                                    Gabinete: Lian Li Lancool 216
+                                </p>
+                            </div>
+                            <footer class="card-footer">
+                                Data da foto <time>05/05/2025 às 12:46</time>
+                                <br>
+                                <button type="button">Comprar</button>
+                            </footer>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-4 m-md-0 mt-sm-3 mb-sm-3">
+                        <article class="card hover-floating-card h-100 d-flex flex-column">
+                            <header class="card-header card1"> 
+                                <h3><span class="text-cards1">🔥PC Gamer High-End com RTX3080 Ti🔥</span></h3>
+                            </header>
+                            <img src="./imagens/cards.pcs/pc2.jpg" alt="Trabalhadores na oficina">
+                            <div class="card-body">
+                                <p class="card-text">Configuração básica:
+                                    Processador: Intel Core i9-12900K (16 núcleos, até 5.2GHz)
+                                    Placa de vídeo: NVIDIA RTX 3080 Ti (12GB GDDR6X)
+                                    Memória RAM: 32GB DDR5 5200MHz
+                                    Armazenamento: SSD NVMe 1TB + HDD 2TB
+                                    Placa-mãe: ASUS ROG Strix Z690-E (WiFi 6, DDR5)
+                                    Fonte: Corsair RM850x (850W, 80+ Gold)
+                                    Cooler: NZXT Kraken X73 (AIO 360mm)
+                                    Gabinete: Lian Li PC-O11 Dynamic
+                                </p>
+                            </div>
+                            <footer class="card-footer">
+                                Data da foto <time>08/07/2025 às 21:41</time>
+                                <br>
+                                <button type="button">Comprar</button>
+                            </footer>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <article class="card hover-floating-card h-100 d-flex flex-column">
+                            <header class="card-header card1"> 
+                                <h3><span class="text-cards1">🔥PC Gamer High-End com RTX5080 Ti🔥</span></h3>
+                            </header>
+                            <img src="./imagens/cards.pcs/pc3.jpg" alt="Trabalhadores na oficina">
+                            <div class="card-body">
+                                <p class="card-text">Configuração Básica:
+                                    Processador: Intel Core i9-15900K (24 núcleos, até 6.0GHz) ou AMD Ryzen 9 9950X
+                                    Placa de Vídeo: NVIDIA RTX 5080 Ti (24GB GDDR7) – Com arquitetura Blackwell e DLSS 4.0
+                                    Memória RAM: 64GB DDR6 8000MHz (2x32GB)
+                                    Armazenamento: SSD NVMe PCIe 5.0 2TB (Leitura: 14.000 MB/s) + SSD SATA 4TB para backup
+                                    Placa-Mãe: ASUS ROG Maximus Z890 (WiFi 7, DDR6, PCIe 5.0)
+                                    Fonte: Corsair AX1200W (1200W, 80+ Titanium, Full Modular)
+                                    Cooler: NZXT Kraken Elite 360mm (AIO com tela LCD)
+                                    Gabinete: Lian Li O11D Evo XL (Com suporte para 12 fans + RGB futurista)
+                                </p>
+                            </div>
+                            <footer class="card-footer">
+                                Data da foto <time>04/03/2025 às 09:52</time>
+                                <br>
+                                <button type="button">Comprar</button>
+                            </footer>
+                        </article>
+                    </div>
+            </section>
+            <section id="fale-conosco">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="section-title text-center text-white mt-5">
+                            Fale <span class="text-colored">conosco</span>
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7 mb-5">
+                            <form id="meuFormulario">
+                                <div class="mb-3">
+                                    <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                    <input type="text" id="nome" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                    <input type="email" id="email" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telefone" class="form-label fw-bold text-colored">Seu telefone</label>
+                                    <input type="tel" id="telefone" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                    <textarea id="mensagem" class="form-control" rows="5" maxlength="200" required></textarea>
+                                    <small class="form-text text-muted text-white">Máximo 200 caracteres</small>
+                                </div>
+                                <button type="submit">Enviar</button>
+                            </form>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="row">
+                                <h3 class="section-title fs-4 text-colored text-white">
+                                    <i class="bi bi-hand-thumbs-up-fill text-white"></i>
+                                    Redes sociais
+                                </h3>
+                                <ul class="social-links text-white">
+                                    <li class="fs-5">
+                                        <a href="#">
+                                            <i class="bi bi-facebook text-colored text-white"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-5 ms-1 me-1">
+                                        <a href="#">
+                                            <i class="bi bi-instagram text-colored text-white"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-5">
+                                        <a href="#">
+                                            <i class="bi bi-whatsapp text-colored text-white"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row mt-4">
+                                <h3 class="section-title fs-4 text-colored text-white">
+                                    <i class="bi bi-cursor-fill text-white"></i>
+                                    Endereço
+                                </h3>
+                                <p>
+                                    Rua texte exemplo n° 145, Bairro Ebac - Santa catarina - SC
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="p-3">
+                <div class="container">
+                <h4> &copy; <a href="https://github.com/Rick-Dev-Br" target="_blank" rel="noopener noreferrer">Rick-Dev-Br</a> - Todos os diretos reservados - 2025</h4>
+                </div>
+            </footer>
+    </div>
+    <script src="./lib/jquery-3.7.1.min.js"></script>
+    <script src="./lib/jquery.mask.min.js"></script>
+    <script src="./lib/jquery.validate.min.js"></script>
+    <script src="./lib/sweetalert2.all.min.js"></script>
+    <script src="./lib/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.section-title  {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+h1.section-title  {
+    font-size: 1.5rem;
+}
+
+.navbar {
+    background-color: #121212;
+}
+
+.text-colored {
+    color: #3498DB;
+}
+
+.text-colored1 {
+    color: #3498DB;
+}
+
+.card-header.card1 {
+    background-color: #2C3E50;
+}
+
+.text-cards {
+    color: #2C3E50;
+}
+
+.text-cards1 {
+    color: #7F7F7F;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%; /* Define altura fixa */
+    object-fit: cover; /* Cobrir o container sem distorcer */
+    object-position: center; /* Centraliza a imagem */
+}
+
+@media (min-width: 992px) {
+.hover-floating-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-floating-card:hover {
+    transform: translateY(-30px); /* Move o card para cima */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) ; /* Sombra mais destacada */
+    margin:  0.5rem;
+}
+}
+
+button {
+    background-color: #3498DB;
+    border-radius: 0.5rem !important;
+    color: white;
+    padding: 10px;
+}
+li {
+    list-style: none;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+#sobre-a-loja {
+    background-color: #424242;
+}
+
+#sobre-a-loja p,
+li {
+    color: white;
+}
+
+#conserto {
+    background-color: #666666;
+}
+
+#fale-conosco {
+    background-color: #666666;
+}
+
+#fale-conosco label,
+p {
+    color: white;
+}
+
+#nosso-pcs {
+    background-color: #424242;
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+footer {
+    background-color: #121212;
+}
+
+.card-text {
+    color: black;
+}
+
+footer h4,a {
+    color: white;
+}
